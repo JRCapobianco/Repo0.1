@@ -1,4 +1,5 @@
 package packagexercicios;
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -168,8 +169,83 @@ public class Exercicios
 
     public static void ex5()
     {
+        Scanner entrada = new Scanner (System.in);
+
+        System.out.println("Quantos gols foram marcados pelo nacional de Patos?");
+        int gols_nacional = entrada.nextInt();
+        System.out.println("Quantos gols foram marcados pelo Treze?");
+        int gols_treze = entrada.nextInt();
+
+        if (gols_nacional > gols_treze) System.out.println("O Nacional de Patos venceu!");
+        else System.out.println("O Treze venceu!");
+
+        entrada.close();
+
+
+
 
         
+    }
+
+    public static void ex6()
+    {
+        Scanner entrada = new Scanner (System.in);
+        System.out.println("Digite um numero de 1 a 7, referente a um dia da semana");
+        String dia = entrada.next();
+
+        switch(dia) 
+        {
+            case "1": System.out.println("Segunda-Feira"); break;
+
+            case "2": System.out.println("Terça-Feira"); break;
+
+            case "3": System.out.println("Quarta-Feira"); break;
+
+            case "4": System.out.println("Quinta-Feira"); break;
+
+            case "5": System.out.println("Sexta-Feira"); break;
+
+            case "6": System.out.println("Sábado"); break;
+
+            case "7": System.out.println("Domingo"); break;
+
+        }    
+        entrada.close();
+
+    }
+
+    public static void ex7()
+    {
+        Scanner entrada = new Scanner (System.in);
+
+        System.out.println("Digite o primeiro numero: ");
+        Double num1 = entrada.nextDouble();
+        
+        System.out.println("Digite o segundo numero: ");
+        Double num2 = entrada.nextDouble();
+
+        System.out.println("Digite o terceiro numero: ");
+        Double num3 = entrada.nextDouble();
+
+        if (num1+num2 > num3) System.out.println("num1 + num2 é maior que num3!");
+        else System.out.println("num3 é maior que num1+num2!");
+
+        entrada.close();
+    }
+
+    public static void ex8()
+    {
+        Random rand = new Random();
+
+        int number = rand.nextInt(1, 60);
+        System.out.printf("%d", number);
+
+
+
+
+
+
+
     }
 
 

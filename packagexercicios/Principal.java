@@ -7,7 +7,7 @@ public class Principal
 
     {
        
-        Exercicios.ex4();   
+        Exercicios.ex8();   
 
     }
 
